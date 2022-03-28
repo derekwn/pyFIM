@@ -57,13 +57,17 @@ for root, dirs, files in os.walk(directory):
         curfile = os.path.join(root,file)
         filesigs[curfile] = hash_file(curfile, hashtype)
 
+#Begin the continuous scan
 while True:
     for root, dirs, files in os.walk(directory):
         for file in files:
             curfile = os.path.join(root,file)
             curhash = hash_file(curfile, hashtype)
+            #Compare the current file hash to the hash that is stored from the dictionary
             if curhash != filesigs[curfile]:
+                #Create an alert if there is a hash mismatch
                 alert(filesigs[curfile], curhash, curfile, hashtype)
+                #Update the new hash into the dictionary
                 filesigs[curfile] = curhash
     sleep(scaninterval)
 
