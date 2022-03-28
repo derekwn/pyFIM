@@ -5,5 +5,8 @@ This python program is a cross-plateform proof-of-concept **file integrity monit
 ## How does it work?
 This program computes initial hash values of all files within the given directory to develop an initial **baseline**.  It then continues to compute the hash values of these files and compares them against the baseline.  It can also detect if new files are added, or if files are deleted.
 
-## Why did you make this?
-I wanted to develop a deeper understanding of of how the integrity of information is confirmed, and the methods that could be used to monitor for breaches of data integrity.
+Demo:
+[Example](https://i.imgur.com/OyaGfdq.png)
+
+## Why did was this made?
+I wanted to develop a deeper understanding of of how the integrity of information is verified, and the methods that could be used to monitor for breaches of data integrity.
