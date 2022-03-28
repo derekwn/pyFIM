@@ -1,9 +1,9 @@
 # File Integrity Monitor
 ## What is this?
-This python program is a cross-plateform proof-of-concept **file integrity monitor** that monitors a sepcific location in a file system to detect changes and alert the user of those changes.
+This python program is a cross-platform proof-of-concept **file integrity monitor** that monitors a sepcific directory to detect changes and alert the user of those changes.
 
 ## How does it work?
-This program computes initial hash values of all files within the given directory to develop an initial **baseline**.  It then continues to compute the hash values of these files and compares them against the baseline.
+This program computes initial hash values of all files within the given directory to develop a  **baseline**.  It then continues to compute the hash values of these files and compares them against the baseline.
 
 ![Example](https://i.imgur.com/OyaGfdq.png "Example")
 
